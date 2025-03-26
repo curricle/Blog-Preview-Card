@@ -8,27 +8,128 @@
   
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+    :root {
+      --main-font: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+      --yellow: hsl(47, 88%, 63%);
+      --gray-500: hsl(0, 0%, 42%);
+      --gray-950: hsl(0, 0%, 7%);
+    }
+    @font-face {
+      font-family: "Figtree";
+      src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+    }
+    * {
+      box-sizing: border-box;
+      font-family: "Figtree", sans-serif;
+      line-height: 150%;
+      letter-spacing: 0px;
+    }
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: var(--yellow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .blogCard {
+      background-color: hsl(0, 0%, 100%);
+      width: 384px;
+      height: 522px;
+      border: 1px solid var(--gray-950);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 8px 8px;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
+    .blogImage {
+      border-radius: 10px;
+    }
+    .category {
+      background-color: var(--yellow);
+      border-radius: 4px;
+      font-weight: 800;
+      padding: 4px 12px;
+      width: 100%;
+    }
+    .blogContent {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .blogContent h1 {
+      font-weight: 800;
+      font-size: 24px;
+      margin: 0;
+    }
+    .blogContent h1:hover {
+      color: var(--yellow);
+      transition: 0.2s all;
+    }
+    .blogContent p {
+      font-size: 16px;
+      margin: 0;
+      color: var(--gray-500);
+    }
+    .publishDate {
+      font-size: 14px;
+    }
+    .byline {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+    }
+    .byline img {
+      height: 32px;
+      width: 32px;
+    }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      margin-top: 20px
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
   </style>
 </head>
 <body>
 
-  Learning
+    <main class="blogCard">
+      <img class="blogImage" src="assets/images/illustration-article.svg" alt="Abstract illustration in black, white, and yellow" />
+      
+      <div class="blogContent">
+        <div class="categoryContainer"><span class="category">Learning</span></div>
 
-  Published 21 Dec 2023
+        <div class="publishDate">Published 21 Dec 2023</div>
 
-  HTML & CSS foundations
+        <header><h1>HTML & CSS foundations</h1></header>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
+      
 
-  Greg Hooper
+      <div class="byline">
+        <img src="assets/images/image-avatar.webp" alt="Headshot: Greg Hooper"/>
+        Greg Hooper
+      </div>
+    </main>
+
   
-  <div class="attribution">
+  <footer>
+    <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/curricle">S. Jordan</a>.
+    </div>
+  </footer>
+  
 </body>
 </html>
