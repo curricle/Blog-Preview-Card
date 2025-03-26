@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/blog-preview-card-using-flexbox-AJ5izlLmfB)
+- Live Site URL: [GitHub Pages](https://curricle.github.io/Blog-Preview-Card/)
 
 ## My process
 
@@ -47,8 +47,8 @@ I brushed up on CSS variables and using local fonts.
 
 ### Useful resources
 
-- [Example resource 1](https://stackoverflow.com/questions/38086083/to-use-local-font-in-html-using-font-face) - This helped me with the syntax of loading a locally stored custom font into the page.
-- [Example resource 2](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Flexbox cheatsheet reference that I always keep handy just in case.
+- [StackOverflow](https://stackoverflow.com/questions/38086083/to-use-local-font-in-html-using-font-face) - This helped me with the syntax of loading a locally stored custom font into the page.
+- [Flexbox Guide on CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Flexbox cheatsheet reference that I always keep handy just in case.
 
 
 ## Author
